@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white_bg"
+    android:orientation="vertical">
+
+    <com.saiyi.libfast.activity.view.NavBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:backgroundColor="@color/colorPrimary"
+        app:rightTextSize="16dp"
+        app:rightTxtColor="#FFF"
+        app:titleColor="#FFF"
+        app:titleSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="30dp">
+
+        <com.saiyi.gymequipment.common.view.RoundTextView
+            android:id="@+id/rt_sport_times"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            app:content_text="2"
+            app:hint_text="@string/times"
+            app:title_text="@string/frequency" />
+
+        <com.saiyi.gymequipment.common.view.RoundTextView
+            android:id="@+id/rv_distance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            app:content_text="2"
+            app:hint_text="@string/monthlyexercise_setting_text_gongli"
+            app:title_text="@string/distance" />
+
+        <com.saiyi.gymequipment.common.view.RoundTextView
+            android:id="@+id/rv_step_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            app:content_text="2"
+            app:hint_text="@string/step"
+            app:title_text="@string/step_number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.saiyi.gymequipment.common.view.RoundTextView
+            android:id="@+id/rt_minute"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            app:content_text="2"
+            app:hint_text="@string/minute"
+            app:title_text="@string/time_length" />
+
+        <com.saiyi.gymequipment.common.view.RoundTextView
+            android:id="@+id/rv_consume"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            app:content_text="2"
+            app:hint_text="@string/kcal"
+            app:title_text="@string/consume" />
+
+        <com.saiyi.gymequipment.common.view.RoundTextView
+            android:id="@+id/rv_speed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            app:content_text="2"
+            app:hint_text="@string/km_m"
+            app:title_text="@string/speed" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_footpath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/trails"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/list_in"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/foot_path"
+            android:textColor="#FF323232"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#FFF2F2F2"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_fitness_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/fitness_history"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/list_in"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/sport_run_history"
+            android:textColor="#FF323232"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#FFF2F2F2"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_rankings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/rankings"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/list_in"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/ranking_list"
+            android:textColor="#FF323232"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

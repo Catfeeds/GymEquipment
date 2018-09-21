@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- PermissionHelper start -->
+    <string name="permission_ok">好的</string>
+    <string name="permission_desc">权限申请说明</string>
+    <string name="permission_desc_info">App运行需要如下权限才能保证功能的正常使用,请授予接下来的权限申请!</string>
+    <string name="permission_rejected">权限被拒绝</string>
+    <string name="permission_lacked_tips">App运行缺少相关权限可能会影响到功能的正常使用,请前往设置</string>
+    <string name="permission_bluetooth_admin">访问蓝牙设备需要权限,请前往设置</string>
+    <string name="permission_bluetooth">连接蓝牙设备需要权限,请前往设置</string>
+    <string name="permission_camera">扫描二维码需要相机的权限,请前往设置</string>
+    <string name="permission_write_external_storgage">App运行需要读写文件的权限</string>
+    <!-- end -->
+
+</resources>

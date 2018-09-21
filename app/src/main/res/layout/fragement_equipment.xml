@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white_bg"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <com.saiyi.libfast.activity.view.NavBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:backgroundColor="@color/colorPrimary"
+        app:rightTextSize="16dp"
+        app:rightTxtColor="#FFF"
+        app:titleColor="#FFF"
+        app:titleSize="18dp" />
+
+    <ScrollView
+        android:id="@+id/content_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_white_bg"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                app:image_scale_type="fit_xy"
+                app:indicator_drawable_selected="@drawable/selected_radius"
+                app:indicator_drawable_unselected="@drawable/unselected_radius"
+                app:indicator_height="5dp"
+                app:indicator_margin="4dp"
+                app:indicator_width="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="187dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.saiyi.gymequipment.common.view.RoundTextView
+                    android:id="@+id/frequency_rtv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    app:content_text="0"
+                    app:hint_text="@string/times"
+                    app:title_text="@string/frequency" />
+
+                <com.saiyi.gymequipment.common.view.RoundTextView
+                    android:id="@+id/energy_consumed_rtv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    app:content_text="0"
+                    app:hint_text="@string/kcal"
+                    app:title_text="@string/consume" />
+
+                <com.saiyi.gymequipment.common.view.RoundTextView
+                    android:id="@+id/time_length_rtv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    app:content_text="0"
+                    app:hint_text="@string/minute"
+                    app:title_text="@string/time_length" />
+            </LinearLayout>
+
+            <com.saiyi.gymequipment.common.view.NoScrollListview
+                android:id="@+id/menu_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:dividerHeight="0.01dp"
+                android:scrollbars="none" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

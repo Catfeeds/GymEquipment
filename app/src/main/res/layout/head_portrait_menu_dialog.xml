@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:gravity="center_horizontal|bottom">
+    
+    <TextView
+        android:id="@+id/take_photo_tv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textSize="@dimen/text_large"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:background="@drawable/head_portrait_take_photo_bg"
+        android:text="@string/dialog_takephone"
+        android:clickable="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line"/>
+    
+    <TextView
+        android:id="@+id/select_photo_tv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:textSize="@dimen/text_large"
+        android:textColor="@color/text_color"
+        android:background="@drawable/head_portrait_select_photo_bg"
+        android:text="@string/dialog_selectforphone"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/cancle_tv"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="9dp"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_17dp"
+        android:textColor="@color/hint_text_color"
+        android:clickable="true"
+        android:text="@string/dialog_cancle"
+        android:background="@drawable/head_portrait_cancle_bg"
+        />
+
+</LinearLayout>

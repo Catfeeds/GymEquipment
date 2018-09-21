@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/main_white_bg"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_small"
+        android:textColor="@color/hint_text_color"
+        android:text="@string/healthdata_text_monthlyexercise"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="17dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_toset_run"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/text_middle"
+            android:textColor="@color/text_color"
+            android:layout_marginLeft="15dp"
+            android:text="@string/run"/>
+
+        <TextView
+            android:id="@+id/tv_show_run"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_unit1"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/hint_text_color"/>
+
+        <TextView
+            android:id="@+id/tv_unit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/monthlyexercise_setting_text_gongli"
+            android:textSize="@dimen/text_small"
+            android:layout_toLeftOf="@id/tv_right"
+            android:textColor="@color/hint_text_color"
+            android:layout_marginRight="12dp" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/list_in"
+            android:layout_marginRight="12dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_toset_training"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/text_middle"
+            android:textColor="@color/text_color"
+            android:layout_marginLeft="15dp"
+            android:text="@string/monthlyexercise_setting_text_training"/>
+
+        <TextView
+            android:id="@+id/tv_show_runtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_unit2"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/hint_text_color"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_unit2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/running_history_text_hour"
+            android:textSize="@dimen/text_small"
+            android:layout_toLeftOf="@id/tv_right2"
+            android:textColor="@color/hint_text_color"
+            android:layout_marginRight="12dp" />
+
+        <TextView
+            android:id="@+id/tv_right2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/list_in"
+            android:layout_marginRight="12dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

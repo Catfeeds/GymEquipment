@@ -1,0 +1,378 @@
+<resources>
+    <string name="app_name">世纪星运动</string>
+
+    <string name="confirm">确定</string>
+    <string name="delete">删除</string>
+    <string name="cancel">取消</string>
+    <string name="get_dataing">正在获取数据</string>
+    <string name="scan_ble">建立蓝牙连接...</string>
+    <string name="no_get_data">没有获取到数据</string>
+    <string name="deleteing">正在删除</string>
+    <string name="tips">提示</string>
+    <string name="data_format_error">数据格式错误</string>
+    <string name="scan_qrcode">扫码</string>
+
+    <string name="user_not_login">用户未登录</string>
+    <string name="please_check_net_enable">请检查网络时候可用</string>
+    <string name="please_check_ble_enable">请检查蓝牙是否开启</string>
+    <string name="please_check_ble_connect">您当前连接的不是该设备</string>
+
+    <!--登录界面 loginAcitvity -->
+    <string name="login">登录</string>
+    <string name="phone_number">手机号</string>
+    <string name="password">密码</string>
+    <string name="go_register">去注册</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="other_login">第三方账号登录</string>
+    <string name="input_uname_pwd">请输入用户名或密码</string>
+    <string name="uname_format">用户名格式错误</string>
+    <string name="lgoining">正在登录</string>
+    <string name="wx_login_error">微信登录失败</string>
+    <!-- 登录界面 loginAcitvity end -->
+
+    <!-- 注册界面 RegisterActivity -->
+    <string name="register">注册</string>
+    <string name="valid_code">验证码</string>
+    <string name="send_valid_code">获取验证码</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="count_str">剩余%s秒</string>
+    <string name="sending">正在发送</string>
+    <string name="input_user_name">请输入手机号</string>
+    <string name="not_valid_code">您尚未获取验证码</string>
+    <string name="valid_code_error">验证码输入有误</string>
+    <string name="input_valid_code">请输入验证码</string>
+    <string name="pwd_inconsistencies">密码输入不一致</string>
+    <string name="pwd_number_little">密码必须大于六位</string>
+    <string name="registering">正在注册</string>
+    <!-- 注册界面 RegisterActivity end -->
+
+    <!-- 找回密码界面 ForgetPasswordActivity -->
+    <string name="back_password">找回密码</string>
+    <string name="back_pwding">正在找回</string>
+    <string name="back_pwd_success">找回成功,请登录</string>
+    <!-- 找回密码界面 ForgetPasswordActivity end -->
+
+    <!-- 完善资料界面 supplementInfo -->
+    <string name="supplement_info">完善资料</string>
+    <string name="skip">先跳过</string>
+    <string name="user_nikename">昵称</string>
+    <string name="user_brithday">生日</string>
+    <string name="user_brithday1">生日(1990-01-01)</string>
+    <string name="user_height">身高(cm)</string>
+    <string name="user_weight">体重(kg)</string>
+    <string name="input_info">请输入完整信息</string>
+    <string name="brithday_format_error">日期格式错误，正确格式1990-01-01</string>
+    <!-- 完善资料界面 supplementInfo end -->
+
+
+    <!-- 主界面 HomeActivity -->
+    <string name="body_build">健身</string>
+    <string name="run">跑步</string>
+    <string name="me">我</string>
+    <!-- 主界面 HomeActivity end -->
+
+    <!-- EquipmentFragement -->
+    <string name="fitness_center">健身中心</string>
+    <string name="fitness_history">健身历史</string>
+    <string name="ranking_list">排行榜</string>
+    <string name="ranking_list_title">健身排行榜</string>
+    <string name="blue_tooth">蓝牙</string>
+    <string name="scan_code">扫码健身</string>
+    <string name="scan_code_result">扫码运动结果</string>
+    <string name="times">次</string>
+    <string name="frequency">次数</string>
+    <string name="kcal">千卡</string>
+    <string name="consume">消耗</string>
+    <string name="minute">分钟</string>
+    <string name="time_length">时长</string>
+    <string name="qrcode_tips">对准设备上的二维码</string>
+    <string name="bluetooth_not_opened">蓝牙未打开</string>
+    <string name="bluetooth_not_opened_tips">立即前往设置中心开启蓝牙</string>
+    <string name="bluetooth_not_opened_tips1">立即前往设置中心连接蓝牙</string>
+    <string name="go_open">去开启</string>
+    <string name="go_connect">去连接</string>
+    <!-- end -->
+
+    <!-- MotionResultActivity -->
+    <string name="motion_result">运动结果</string>
+    <string name="qr_code_error">二维码信息有误</string>
+    <string name="motion_result_type">完成1次%s训练</string>
+    <string name="motion_result_kilocalorie">千卡</string>
+    <string name="motion_result_calories">卡路里</string>
+    <string name="motion_result_frec">次/分</string>
+    <string name="guide_use"><u>查看器材使用指导</u></string>
+    <string name="not_device">没有找到设备，请重试</string>
+    <string name="not_admin_edit_tips">您不是权限用户，无法进行编辑</string>
+    <string name="connect_failed">连接失败</string>
+    <!-- end -->
+
+    <!-- FitnessCenterActivity -->
+    <string name="search">搜索</string>
+    <string name="click_add_fitness_center">点击"+"添加健身中心</string>
+    <string name="nearby_fitness_center">附近的健身中心</string>
+    <string name="nearby_not_fitness_center">附近没有健身中心</string>
+    <!-- end -->
+
+    <!-- AddFitnessCenterActivity -->
+    <string name="add_fitness_center">新增健身中心</string>
+    <string name="edit_fitness_center">编辑健身中心</string>
+    <string name="fitness_center_name">名称</string>
+    <string name="fitness_center_location">位置</string>
+    <string name="fitness_center_dev">设备</string>
+    <string name="go_setting">去设置</string>
+    <string name="go_add">去添加</string>
+    <string name="go_to_see">去查看</string>
+    <string name="add">添加</string>
+    <string name="current_location">当前位置</string>
+    <string name="current_location_loading">正在获取当前位置</string>
+    <!-- end -->
+
+    <!-- SettingCenterNameActivity -->
+    <string name="setting_center_name">名称设置</string>
+    <string name="input_fc_name">请输入健身中心名称</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <!-- end -->
+
+    <!--EquipmentActivity -->
+    <string name="click_add_fitness_dev">点击"+"添加设备</string>
+    <string name="added">已添加</string>
+    <!-- end -->
+
+    <!-- ScanByQRActivity -->
+    <string name="qrcode_tips4">扫码健身器材上的二维码</string>
+    <!-- end -->
+
+    <!-- AddEditEquipmentActivity -->
+    <string name="dev_result">设备结果</string>
+    <string name="done">完成</string>
+    <string name="dev_id">设备ID</string>
+    <string name="port">端口</string>
+    <string name="add_port">添加端口</string>
+    <string name="delete_dev_tips">确认删除%s吗？</string>
+    <string name="adding">正在添加</string>
+    <string name="editing">正在修改</string>
+    <string name="add_failure">添加失败</string>
+    <string name="dev_details">设备详情</string>
+    <!-- end -->
+
+    <!--MeFragement-->
+    <string name="health_data">健康数据</string>
+    <string name="fitness_guidance">健身指导</string>
+    <string name="already_loaded">已经加载全部数据</string>
+    <string name="customer_service">客户服务</string>
+    <string name="versionn_iformation">版本信息</string>
+    <string name="details">详情</string>
+    <!--end-->
+
+    <!--UserInforMationActivity  个人信息界面-->
+    <string name="user_information">个人信息</string>
+    <string name="user_header">头像</string>
+    <string name="user_ipone">手机号</string>
+    <string name="user_sex">性别</string>
+    <string name="user_bodyweight">体重</string>
+    <string name="user_bodyheight">身高</string>
+    <string name="user_age">年龄</string>
+    <string name="user_exitlogin">退出登录</string>
+    <string name="user_exitlogin_tips">确认退出登录？</string>
+    <string name="exit">退出</string>
+    <string name="double_exit">再按一次退出程序</string>
+    <string name="set_up">正在设置</string>
+    <string name="set_up_success">设置成功</string>
+    <string name="user_img_setting_success">头像设置成功</string>
+    <string name="user_img_setting_failure">头像设置失败</string>
+    <string name="please_input_uname">"请输入用户名"</string>
+    <string name="dialog_takephone">拍照</string>
+    <string name="dialog_selectforphone">从手机选择</string>
+    <string name="dialog_cancle">"取消"</string>
+    <string name="sos_phone">紧急联系电话</string>
+    <string name="phone">电话</string>
+    <string name="guide_video_null">没有找到视频</string>
+
+
+    <!--end-->
+
+    <!-- activity_equipment_repair 客户服务-->
+    <string name="customerservice_scan">扫描器材二维码</string>
+    <string name="customerservice_post">提交</string>
+    <string name="equipment_info">设备详情</string>
+    <string name="equipment_name">设备名称</string>
+    <string name="equipment_id">设备ID</string>
+    <string name="equipment_address">安装位置</string>
+    <string name="equipment_expiry">到期时间</string>
+    <string name="guide_video">指导视频</string>
+    <string name="equipment_repair">器材报修</string>
+    <string name="customerservice_resultquestion">问题反馈</string>
+    <string name="customerservice_scanagation">重新扫描</string>
+    <string name="question_input_length">还可输入%s字</string>
+    <string name="submiting">正在提交</string>
+    <string name="submit_success">提交成功</string>
+    <string name="please_scan">请扫码故障设备</string>
+    <string name="please_resultquestion">请选择故障类型</string>
+    <string name="please_input_msg">请填写详细信息</string>
+    <!--end-->
+
+    <!-- activity_appversion 版本信息-->
+    <string name="appversion_name">世纪星运动</string>
+    <!--end-->
+
+    <!-- UpdateUserInfomationsActivity 修改用户详细信息-->
+    <string name="updateuserinfo_title">个人信息</string>
+    <string name="updateuserinfo_cancle">取消</string>
+    <string name="updateuserinfo_ok">确认</string>
+    <string name="updateuserinfo_boy">男</string>
+    <string name="updateuserinfo_girl">女</string>
+    <!--end-->
+
+    <!-- ScanDeviceErroByQRActivity start -->
+    <string name="scan_qacode">扫码添加</string>
+    <string name="photo_album">相册</string>
+    <string name="off_flashlight">关闭手电筒</string>
+    <string name="on_flashlight">开启手电筒</string>
+    <string name="binding">正在绑定</string>
+    <string name="qrcode_tips1">请选择正确的二维码进行识别</string>
+    <string name="qrcode_tips2">将条码放入框内，即可自动扫描</string>
+    <string name="qrcode_tips3">扫描二维码</string>
+    <string name="manual_input_code">手动输入编码</string>
+    <!-- end -->
+
+    <!--HealthDataActivity  start-->
+    <string name="healthdata_text_monthlyexercise">推荐月运动量</string>
+    <string name="healthdata_text_data">偏瘦&#060;18.5&#160;正常18.5&#8722;23.9&#160;超重&#8805;24&#160;偏胖24&#126;27.9&#160;肥胖&#8805;28</string>
+    <string name="get_user_failed">获取用户资料失败</string>
+    <string name="thin">偏瘦</string>
+    <string name="normal">正常</string>
+    <string name="overweight">超重</string>
+    <string name="fat">偏胖</string>
+    <string name="obesity">肥胖</string>
+    <string name="run_data">跑步%s公里</string>
+    <string name="run_time_data">健身%s</string>
+    <!-- end -->
+
+    <!--MonthlyExerciseSettingActivity  start-->
+    <string name="monthlyexercise_setting_text_training">训练</string>
+    <string name="monthlyexercise_setting_text_title">月运动量设置</string>
+    <string name="monthlyexercise_setting_text_gongli">公里</string>
+    <string name="monthlyexercise_setting_text_h">时</string>
+    <string name="monthlyexercise_setting_text_m">分</string>
+    <string name="monthlyexercise_setting_text_s">秒</string>
+    <string name="run_setting">跑步设置</string>
+    <string name="training_settings">训练设置</string>
+
+    <!-- end -->
+
+    <!--FitnessHistoryActivityvity  start-->
+    <string name="running_history_text_day">日</string>
+    <string name="running_history_text_week">周</string>
+    <string name="running_history_text_month">月</string>
+    <string name="running_history_text_timeall">训练总时长</string>
+    <string name="running_history_text_m">分钟</string>
+    <string name="running_history_text_hour">小时</string>
+    <string name="running_history_text_ok">完成</string>
+    <string name="running_history_text_expend">消耗</string>
+    <string name="running_history_text_mm">千卡</string>
+    <string name="running_history_text_number">次</string>
+    <string name="monday">星期一</string>
+    <string name="tuesday">星期二</string>
+    <string name="wednesday">星期三</string>
+    <string name="thursday">星期四</string>
+    <string name="friday">星期五</string>
+    <string name="saturday">星期六</string>
+    <string name="sunday">星期日</string>
+    <!-- end -->
+
+    <!--跑步页-->
+    <string name="distance">距离</string>
+    <string name="step">步</string>
+    <string name="step_number">步数</string>
+    <string name="km_m">km/m</string>
+    <string name="speed">速度</string>
+    <string name="foot_path">步道</string>
+    <string name="sport_run_history">跑步历史</string>
+
+    <!--步道页-->
+    <string name="near_foot_path">附近步道</string>
+    <string name="add_foot_path">点击“+”添加步道</string>
+    <string name="no_footpath">暂无步道信息</string>
+    <string name="distance_to_footpath">距离%s公里</string>
+    <string name="location_fail">位置跑丢了...</string>
+
+    <!--新增步道-->
+    <string name="add_footpath">新增步道</string>
+    <string name="footpath_name">名称</string>
+    <string name="zero_kilometres">0公里</string>
+    <string name="broadcast_packet">广播包</string>
+    <string name="submission">提交</string>
+    <string name="add_broadcast_and_number">添加广播包后自动计算，请添加广播包</string>
+    <string name="please_set_footpath_name">请设置步道名</string>
+    <string name="please_add_footpath_name">请添加广播包</string>
+    <string name="individual">个</string>
+    <string name="foot_path_add_success">步道添加成功</string>
+    <string name="foot_path_add_fail">步道添加失败</string>
+
+    <!--步道信息编辑页面-->
+    <string name="footpath_setting">步道名设置</string>
+    <string name="distance_of_up_one">距离上一广播包</string>
+    <string name="footpath_distance">步道总长</string>
+    <string name="name">名称</string>
+    <string name="length">长度</string>
+    <string name="please_enter_name">请输入步道名</string>
+    <string name="please_enter_distance">请输入距离</string>
+    <string name="give_up_edit">放弃设置</string>
+    <string name="content_is_not_empty">是否放弃此次编辑内容？</string>
+
+    <!--广播包页-->
+    <string name="broadcast_page">广播包</string>
+    <string name="add_broadcast">点击“+”添加广播包</string>
+    <string name="scan_broadcast_code">扫码广播包上二维码</string>
+    <string name="give_up_add_broadcast">放弃添加</string>
+    <string name="is_give_up_add_broadcast">放弃添加广播包？</string>
+    <string name="please_add_broadcast">请添加广播包</string>
+    <string name="delete_broadcast">删除广播包</string>
+    <string name="is_delete_broadcast">是否删除该广播包？</string>
+
+    <!--添加广播包页-->
+    <string name="add_broadcast_info">添加广播包</string>
+    <string name="add_broadcast_id">ID</string>
+    <string name="location">位置</string>
+    <string name="add_add">添加</string>
+    <string name="please_add_mac">请添加广播包地址</string>
+    <string name="please_set_distance">请设置广播包距离</string>
+    <string name="please_set_location">请设置广播包位置</string>
+    <string name="please_not_add_again">请不要重复添加广播包</string>
+
+
+    <!--排行榜页面-->
+    <string name="run_ranking_list">跑步排行榜</string>
+    <string name="km">Km</string>
+
+    <!--跑步历史记录-->
+    <string name="week">周</string>
+    <string name="kilometre">公里</string>
+    <string name="run_history">跑步历史记录</string>
+    <string name="out_door_running">户外跑步%s公里</string>
+    <string name="run_total_distance">跑步总距离</string>
+
+    <!--跑步-->
+    <string name="run_remind">开始跑步</string>
+    <string name="run_remind_no_broadcast">当前没有扫描到广播包，是否开始跑步？</string>
+    <string name="sure_to_stop">确定结束此次跑步？</string>
+    <string name="over">结束</string>
+    <string name="error">错误</string>
+    <string name="error_footpath">未正确匹配广播包，请确认是否进入对应的步道。</string>
+    <string name="add_running_data_fail">跑步数据提交失败，正在重新提交...</string>
+    <string name="service_nothing">服务器开小差了...</string>
+    <string name="rice">米</string>
+    <string name="zero_rice">0米</string>
+    <string name="edit">编辑</string>
+    <string name="sos">SOS</string>
+    <string name="set_sos_phone">请先设置求救电话</string>
+    <string name="data_up_success">数据提交成功</string>
+
+    <!--编辑定位信息对话框-->
+    <string name="longitude">经度</string>
+    <string name="latitude">纬度</string>
+    <string name="please_enter_right_data">请输入正确经纬度。</string>
+
+</resources>

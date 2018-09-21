@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/fitness_center_name_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="11dp"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/me_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/fitness_center_name" />
+
+        <TextView
+            android:id="@+id/list_in_tv1"
+            android:layout_width="10dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/list_in" />
+
+        <TextView
+            android:id="@+id/fc_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/list_in_tv1"
+            android:text="@string/go_setting"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/text_small" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fitness_center_location_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/fitness_center_name_rl"
+        android:layout_marginTop="0.1dp"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/me_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/fitness_center_location" />
+
+        <TextView
+            android:id="@+id/list_in_tv2"
+            android:layout_width="10dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/list_in" />
+
+        <TextView
+            android:id="@+id/fc_location_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/list_in_tv2"
+            android:text="@string/go_setting"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/text_small" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fitness_center_dev_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/fitness_center_location_rl"
+        android:layout_marginTop="0.1dp"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/me_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/fitness_center_dev" />
+
+        <TextView
+            android:id="@+id/list_in_tv3"
+            android:layout_width="10dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/list_in" />
+
+        <TextView
+            android:id="@+id/add_dev_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/list_in_tv3"
+            android:text="@string/go_add"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/text_small" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/add_tv"
+        style="@style/submit_btn_style"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/add" />
+
+</RelativeLayout>

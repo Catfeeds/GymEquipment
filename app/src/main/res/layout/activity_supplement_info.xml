@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/skip_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="right"
+                android:text="@string/skip"
+                android:textColor="@color/hint_text_color"
+                android:textSize="@dimen/text_middle"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/supplement_info"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_large" />
+
+        <EditText
+            android:id="@+id/user_name_et"
+            style="@style/login_edit_style"
+            android:layout_marginTop="60dp"
+            android:hint="@string/user_nikename" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/male_rl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_edit_border_selector">
+
+                <ImageView
+                    android:id="@+id/male_iv"
+                    android:layout_width="22dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/male_focused" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/female_rl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_edit_border_selector">
+
+                <ImageView
+                    android:id="@+id/female_iv"
+                    android:layout_width="22dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/female_normal" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/user_brithday_et"
+            style="@style/login_edit_style"
+            android:layout_marginTop="14dp"
+            android:hint="@string/user_brithday1" />
+
+        <EditText
+            android:id="@+id/user_height_et"
+            style="@style/login_edit_style"
+            android:layout_marginTop="14dp"
+            android:hint="@string/user_height"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/user_weight_et"
+            style="@style/login_edit_style"
+            android:layout_marginTop="14dp"
+            android:hint="@string/user_weight"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/sos_phone_et"
+            style="@style/login_edit_style"
+            android:layout_marginTop="14dp"
+            android:hint="@string/sos_phone"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/logger_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="请输入验证码"
+            android:textColor="@color/red_ff3d3d"
+            android:textSize="@dimen/text_small"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/confirm_btn"
+            style="@style/submit_btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textSize="@dimen/text_middle" />
+    </LinearLayout>
+</ScrollView>

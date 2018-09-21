@@ -1,0 +1,41 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "WXAPPID", "\"${WX_APPID}\""
+            buildConfigField "String", "WXAPPSECRET", "\"${WX_APPSECRET}\""
+        }
+
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "WXAPPID", "\"${WX_APPID}\""
+            buildConfigField "String", "WXAPPSECRET", "\"${WX_APPSECRET}\""
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    //网络请求库
+    compileOnly 'com.squareup.okhttp3:okhttp:3.10.0'
+    compileOnly 'com.squareup.retrofit2:converter-gson:2.1.0'
+}

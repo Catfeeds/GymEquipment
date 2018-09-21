@@ -1,0 +1,39 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="marginLeft">15dp</dimen>
+    <dimen name="login_marginLeft">20dp</dimen>
+    <!-- 日历边框 -->
+    <dimen name="calendar_border_margin">0dp</dimen>
+    <!-- 日历周名 -->
+    <dimen name="weekname_size">14dp</dimen>
+    <dimen name="weekname_margin">8dp</dimen>
+    <dimen name="day_size">18dp</dimen>
+    <dimen name="action_size">12dp</dimen>
+    <dimen name="day_top_offset">16dp</dimen>
+    <integer name="max_width_short_month_label_dp">240</integer>
+    <integer name="max_height_mini_view_dp">180</integer>
+    <integer name="max_height_mini_view_1_row_dp">120</integer>
+    <dimen name="historyscore_tb">10dp</dimen>
+
+    <dimen name="titlebartextSize">20sp</dimen>
+
+    <dimen name="date_layout_height">400dp</dimen>
+
+    <dimen name="towTitleTextSize">28sp</dimen>
+
+    <dimen name="user_text_size">15sp</dimen>
+    <dimen name="user_text_size2">17sp</dimen>
+
+    <dimen name="left_Right">15dp</dimen>
+
+
+    <dimen name="y40">40dp</dimen>
+    <dimen name="y130">130dp</dimen>
+    <dimen name="x40">40dp</dimen>
+    <dimen name="x14">14dp</dimen>
+    <dimen name="x24">24dp</dimen>
+    <dimen name="y20">20dp</dimen>
+
+    <dimen name="text36">36dp</dimen>
+
+</resources>

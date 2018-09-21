@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.saiyi.gymequipment"
+        minSdkVersion 19
+        targetSdkVersion 22
+        versionCode 17
+        versionName "1.2.2"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "${defaultConfig.applicationId }_V${defaultConfig.versionName}_${releaseTime() }.apk"
+        }
+    }
+
+    allprojects {
+        repositories {
+            maven { url "https://jitpack.io" }
+        }
+    }                  
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    //ButterKnife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //广告轮播
+    implementation 'com.youth.banner:banner:1.4.10'
+    //BaseRecyclerViewAdapterHelper github:https://github.com/CymChad/BaseRecyclerViewAdapterHelper
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    //EasySwipeMenuLayout github:https://github.com/anzaizai/EasySwipeMenuLayout
+    implementation 'com.github.anzaizai:EasySwipeMenuLayout:1.1.2'
+    //图表
+    implementation 'com.github.lecho:hellocharts-android:v1.5.8'
+    implementation project(':lib.fast')
+    implementation project(':lib.qrcode')
+    implementation project(':wheelview')
+    implementation project(':lib.map')
+    implementation project(':lib.ble')
+    implementation project(':lib.pullToRefreshlibrary')
+    implementation project(':lib.bugly')
+    implementation project(':lib.jpush')
+    implementation project(':lib.wechat')
+    implementation project(':lib.videoview')
+}

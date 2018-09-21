@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_white_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/colorWhiteTitle">
+
+        <TextView
+            android:id="@+id/tv_text_bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="BMI"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_middle" />
+
+        <TextView
+            android:id="@+id/tv_bodyweight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_middle" />
+
+        <ProgressBar
+            android:id="@+id/progesss1"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_below="@id/tv_text_bmi"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/greenprogressbar"
+            android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal"
+            android:indeterminateOnly="false"
+            android:max="50"
+            android:maxHeight="50dp"
+            android:minHeight="16dp"
+            android:progress="0"
+            android:progressDrawable="@drawable/greenprogressbar" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/healthdata_text_data"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/text_main" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/healthdata_text_monthlyexercise"
+        android:textColor="@color/hint_text_color"
+        android:textSize="@dimen/text_small" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/main_white_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_gotosetting1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorWhiteTitle"
+            android:gravity="center">
+
+            <com.saiyi.gymequipment.common.view.CircleProgress
+                android:id="@+id/cp_running"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                app:antiAlias="true"
+                app:arcColors="#1BEAEA"
+                app:arcWidth="7dp"
+                app:bgArcColor="@color/main_white_bg"
+                app:startAngle="270"
+                app:sweepAngle="360"
+                app:unit="完成"
+                app:unitColor="@color/hint_text_color"
+                app:unitSize="@dimen/text_small"
+                app:value="0"
+                app:valueColor="@color/text_color"
+                app:valueSize="@dimen/text_size_24dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cp_running"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/running" />
+
+                <TextView
+                    android:id="@+id/tv_rundata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/text_color"
+                    android:text="@string/run_data"
+                    android:textSize="@dimen/text_middle" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_gotosetting2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorWhiteTitle"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.saiyi.gymequipment.common.view.CircleProgress
+                android:id="@+id/cp_equipment"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                app:antiAlias="true"
+                app:arcColors="#22DFFF"
+                app:arcWidth="7dp"
+                app:bgArcColor="@color/main_white_bg"
+                app:maxValue="100"
+                app:startAngle="270"
+                app:sweepAngle="360"
+                app:unit="完成"
+                app:unitColor="@color/hint_text_color"
+                app:unitSize="@dimen/text_small"
+                app:value="0"
+                app:valueColor="@color/text_color"
+                app:valueSize="@dimen/text_size_24dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cp_equipment"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fitness" />
+
+                <TextView
+                    android:id="@+id/tv_runtime_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/run_time_data"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_middle" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

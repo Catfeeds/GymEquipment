@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF7F7F7">
+
+    <!--修改昵称-->
+    <RelativeLayout
+        android:id="@+id/rl_update_nikename"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFFFF"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/text_nikename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/user_nikename"
+            android:inputType="date"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_middle" />
+
+        <EditText
+            android:id="@+id/et_updatenikename"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@id/text_nikename"
+            android:background="@null" />
+    </RelativeLayout>
+
+    <!--修改性别-->
+    <LinearLayout
+        android:id="@+id/rl_update_sex"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="#FFF7F7F7"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FFFFFFFF">
+
+            <TextView
+                android:id="@+id/text_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/user_sex"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_middle" />
+
+            <TextView
+                android:id="@+id/tv_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@id/text_sex"
+                android:text=""
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_middle" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFFFF">
+
+
+            <ImageView
+                android:id="@+id/iv_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="140dp"
+                android:background="@drawable/male" />
+
+            <ImageView
+                android:id="@+id/iv_fmale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="140dp"
+                android:background="@drawable/female" />
+
+            <ImageView
+                android:id="@+id/male_selection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/iv_male"
+                android:layout_alignTop="@+id/iv_male"
+                android:background="@drawable/gender_selection"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/fmale_selection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/iv_fmale"
+                android:layout_alignTop="@+id/iv_fmale"
+                android:background="@drawable/gender_selection"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--修改生日-->
+    <RelativeLayout
+        android:id="@+id/rl_update_brithday"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFFFF"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/text_brithday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/user_brithday"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_middle" />
+
+        <TextView
+            android:id="@+id/tv_brithday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@id/text_brithday"
+            android:text=""
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_middle" />
+    </RelativeLayout>
+
+    <!--修改身高-->
+    <RelativeLayout
+        android:id="@+id/rl_update_userheight"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFFFF"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/text_userheight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/user_bodyheight"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_middle" />
+
+        <TextView
+            android:id="@+id/tv_userheight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@id/text_userheight"
+            android:text=""
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_middle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_userheight"
+            android:text="cm"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_middle" />
+    </RelativeLayout>
+
+    <!--修改体重-->
+    <RelativeLayout
+        android:id="@+id/rl_update_userbody"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFFFF"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/text_userbody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/user_bodyweight"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_middle" />
+
+        <TextView
+            android:id="@+id/tv_userbody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@id/text_userbody"
+            android:text=""
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_middle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_userbody"
+            android:text="kg"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_middle" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/pickerview_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <NumberPicker
+            android:id="@+id/npick1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <NumberPicker
+            android:id="@+id/npick2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <NumberPicker
+                android:id="@+id/npick3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="cm" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sos_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_sos_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/phone"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_middle" />
+
+        <EditText
+            android:id="@+id/et_sos_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:inputType="number|numberDecimal"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="15dp"/>
+    </LinearLayout>
+</RelativeLayout>

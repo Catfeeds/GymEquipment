@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fitness_guidance_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="0.01dp"/>
+
+    <ImageView
+        android:id="@+id/item_icon_iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/fitness_center" />
+
+    <TextView
+        android:id="@+id/item_head_tv"
+        style="@style/me_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/item_icon_iv"
+        android:text="@string/fitness_center" />
+
+    <TextView
+        android:id="@+id/item_msg_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="4dp"
+        android:layout_toLeftOf="@+id/arrow_tv"
+        android:text="@string/scan_code_result"
+        android:textColor="@color/hint_text_color"
+        android:textSize="@dimen/text_middle"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/arrow_tv"
+        android:layout_width="10dp"
+        android:layout_height="14dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/list_in" />
+
+</RelativeLayout>

@@ -1,0 +1,2 @@
+include ':app', ':lib.fast', ':lib.ble', ':lib.qrcode', ':lib.map', ':wheelview', ':lib.wechat', ':lib.videoview',"lib.bugly","lib.pullToRefreshlibrary","lib.jpush"
+

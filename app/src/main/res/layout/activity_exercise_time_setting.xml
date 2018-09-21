@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/main_white_bg"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_textleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/run"
+            android:textSize="@dimen/text_middle"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/text_color"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_timeset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_middle"
+            android:textColor="@color/text_color"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_textleft"
+            android:text="30:00公里"
+            android:layout_marginLeft="18dp"
+            />
+
+    </RelativeLayout>
+
+
+    <include
+        layout="@layout/pickerview_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        ></include>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.saiyi.libmap">
+
+    <application>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="43c1d59bcdef85b9d55cd5a3711fb7c0" ></meta-data>
+    </application>
+</manifest>
+
